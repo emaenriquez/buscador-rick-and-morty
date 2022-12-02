@@ -1,3 +1,4 @@
+
 const contenedor = document.querySelector('.contenedor-card')
 const input_buscar = document.querySelector('.input-buscar')
 let contenedor_div_element;
@@ -56,7 +57,8 @@ input_buscar.addEventListener('keyup',(e)=>{
     if(e.target.matches('.input-buscar')){
     
     document.querySelectorAll('.nombre_personaje').forEach((item)=>{
-        item.textContent.toLowerCase().includes(valor.toLowerCase()) ? contenedor_div_element.classList.remove('ocultar') : contenedor_div_element.classList.add('ocultar') 
+        item.textContent.toLowerCase().includes(valor.toLowerCase()) ? 
+        contenedor_div_element.classList.remove('ocultar') : contenedor_div_element.classList.add('ocultar') 
     })
     
     }
